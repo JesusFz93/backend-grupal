@@ -97,6 +97,7 @@ const obtieneUsuarios = async (req, res) => {
 };
 
 const listarUsuarios_CT = async (req, res) => {
+  console.log("listarUsuarios_CT");
   resp.data = await listarUsuarios_BL();
   resp.msg = "Listado de usuarios";
   return res.json(resp);

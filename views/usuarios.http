@@ -1,8 +1,8 @@
-@api = http://localhost:6000/api/usuarios
+@api = http://localhost:6001/api/usuarios
 
 ### get all elements
 {{api}}
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMTEzZGQyNmJhYmEwYzRmNTY1MDE2MiIsInVzZXJuYW1lIjoiZG1hciIsImlhdCI6MTY0NTI5Nzk5MywiZXhwIjoxNjQ1MzAxNTkzfQ.7WR2I60HXxGGBHofgpVkCR9KA6EtAKFOpU3cj9OTG2g
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMTEzZGQyNmJhYmEwYzRmNTY1MDE2MiIsInVzZXJuYW1lIjoiZG1hciIsImlhdCI6MTY0NTI5ODY3NywiZXhwIjoxNjQ1Mzg1MDc3fQ.-QqG1OuLt2ftIveCVNvKpOLAnQ73J5yb0QHfn2jwIhk
 
 
 
