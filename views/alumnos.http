@@ -1,0 +1,33 @@
+@api = http://localhost:6000/api/alumnos
+
+### get all elements
+{{api}}
+
+### get element
+{{api}}/61fec5eb4045129982758312
+
+### add an element
+POST {{api}}
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MGVjNDJlODZiZTE2NzlkNmNmMDg2NjEiLCJpYXQiOjE2MzEwNTIyNTAsImV4cCI6MTYzMTA2NjY1MH0.saezcg3G3uvinlCbs_E_zC9zOvVls_Dy2-6XrZeZBqM
+
+{
+    "nombre" : "Javier",
+    "apellidoPaterno" : "Marin",
+    "apellidoMaterno" : "Loret",
+    "edad" : 19,
+    "sexo" : "Masculino",
+    "direccion" : "Calle 23",
+    "estadoCivil" : "s"
+}
+
+### update element
+PUT {{api}}/62113e5cf955dceb9a4cfc54
+Content-Type: application/json
+
+{
+    "edad" : 12
+}
+
+### delete element 
+DELETE {{api}}/62113e5cf955dceb9a4cfc54

@@ -1,0 +1,28 @@
+@api = http://localhost:6000/api/turnos
+@search_id = 62113454348a1464fe84d725
+
+### get all elements
+{{api}}
+
+### get element
+{{api}}/{{search_id}}
+
+### add an element
+POST {{api}}
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MGVjNDJlODZiZTE2NzlkNmNmMDg2NjEiLCJpYXQiOjE2MzEwNTIyNTAsImV4cCI6MTYzMTA2NjY1MH0.saezcg3G3uvinlCbs_E_zC9zOvVls_Dy2-6XrZeZBqM
+
+{
+    "nombre" : "Dominical"
+}
+
+### update element
+PUT {{api}}/{{search_id}}
+Content-Type: application/json
+
+{
+    "nombre" : "Juliano"
+}
+
+### delete element 
+DELETE {{api}}/{{search_id}}

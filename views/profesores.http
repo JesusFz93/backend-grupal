@@ -1,0 +1,33 @@
+@api = http://localhost:6000/api/profesores
+
+### get all elements
+{{api}}
+
+### get element
+{{api}}/62113314ec6c9f9cb6fba74b
+
+### add an element
+POST {{api}}
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MGVjNDJlODZiZTE2NzlkNmNmMDg2NjEiLCJpYXQiOjE2MzEwNTIyNTAsImV4cCI6MTYzMTA2NjY1MH0.saezcg3G3uvinlCbs_E_zC9zOvVls_Dy2-6XrZeZBqM
+
+{
+    "nombre" : "Jonny",
+    "apellidoPaterno" : "Ravs",
+    "apellidoMaterno" : "Loin",
+    "edad" : 35,
+    "sexo" : "Masculino",
+    "direccion" : "Calle 23",
+    "estadoCivil" : "c"
+}
+
+### update element
+PUT {{api}}/62113314ec6c9f9cb6fba74b
+Content-Type: application/json
+
+{
+    "edad" : 43
+}
+
+### delete element 
+DELETE {{api}}/62113314ec6c9f9cb6fba74b

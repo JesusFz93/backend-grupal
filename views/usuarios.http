@@ -1,0 +1,28 @@
+@api = http://localhost:6000/api/usuarios
+
+### get all elements
+{{api}}
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMTEzZGQyNmJhYmEwYzRmNTY1MDE2MiIsInVzZXJuYW1lIjoiZG1hciIsImlhdCI6MTY0NTI5Nzk5MywiZXhwIjoxNjQ1MzAxNTkzfQ.7WR2I60HXxGGBHofgpVkCR9KA6EtAKFOpU3cj9OTG2g
+
+
+
+### add an element
+POST {{api}}
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMTEzZGQyNmJhYmEwYzRmNTY1MDE2MiIsInVzZXJuYW1lIjoiZG1hciIsImlhdCI6MTY0NTI5Nzk5MywiZXhwIjoxNjQ1MzAxNTkzfQ.7WR2I60HXxGGBHofgpVkCR9KA6EtAKFOpU3cj9OTG2g
+
+{
+    "nombre" : "Diego",
+    "username" : "dmar",
+    "email" : "diego@hotmail.com",
+    "password" : "123456"
+}
+
+### sign in
+POST {{api}}/signin
+Content-Type: application/json
+
+{
+    "username" : "dmar",
+    "password" : "123456"
+}
